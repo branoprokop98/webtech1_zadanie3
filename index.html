@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body id="center-block-middle">
+
+    <section class="content">
+        <article class="grid-item">
+            <h2>Text</h2>
+        </article>
+
+        <article class="grid-item">
+            <form>
+                <div class="form-group">
+                    <label for="firstMame">Meno</label>
+                    <input type="text" class="form-control" id="firstMame" aria-describedby="firstMame"
+                        title="Krstné meno">
+                </div>
+                <div class="form-group">
+                    <label for="secondName">Priezvisko</label>
+                    <input type="text" class="form-control" id="secondName" aria-describedby="secondName"
+                        title="Priezvisko">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Heslo</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                    <input type="radio" name="my-input" value="Yes" id="show">
+                    <label for="yes">Yes</label>
+
+                    <input type="radio" name="my-input" value="No" id="hide" checked="checked">
+                    <label for="no">No</label>
+                </div>
+
+                <div id="show-hide">
+                    <div>
+                        <label for="firstRoll">First roll</label>
+                        <select class="form-control" id="firstRoll">
+                            <option>Default select</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="secondRoll">Second roll</label>
+                        <select class="form-control" id="secondRoll">
+                            <option>Default select</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+
+                <button type="submit" onclick="emailValid()" class="btn btn-primary">Submit</button>
+            </form>
+        </article>
+    </section>
+
+    <script src="javascript/main.js"></script>
+
+</body>
+
+</html>
