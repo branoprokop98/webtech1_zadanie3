@@ -12,7 +12,7 @@ Všeobecné pokyny
 Zadanie cvičenia:
 Vytvorte váš vlastný zmysluplný formulár. Zameranie formuláru si môžete určiť sami, musia však byť splnené nasledovné požiadavky:
 
-- [ ] vo formulári bude potrebné odosielať položky dátum narodenia a vek. Skontrolujte, či zadanému dátumu narodenia zodpovedá zadaný vek. V prípade, že tieto dva údaje nie sú navzájom prepojené, zabezpečte, aby formulár nebolo možné odoslať.
+- [x] vo formulári bude potrebné odosielať položky dátum narodenia a vek. Skontrolujte, či zadanému dátumu narodenia zodpovedá zadaný vek. V prípade, že tieto dva údaje nie sú navzájom prepojené, zabezpečte, aby formulár nebolo možné odoslať.
 
 - [ ] pri realizácii zaškrtávacieho poľa (cez checkbox) dajte užívateľovi aj možnosť, aby si svoju odpoveď dodefinoval sám. Vo formulári sa napríklad môže nachádzať otázka (dúfam, že vymyslíte niečo iné) "akú farbu máte najradšej" s odpoveďami "biela", "modrá", "červená". Do odpovedí je potrebné pridať aj možnosť typu "iná, uveďte aká". Po zakliknutí tejto alternatívy sa užívateľovi zobrazí dovtedy nezobrazené textové pole, do ktorého vloží svoju odpoveď.
 
