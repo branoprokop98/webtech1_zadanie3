@@ -14,10 +14,10 @@ Vytvorte váš vlastný zmysluplný formulár. Zameranie formuláru si môžete 
 
 - [x] vo formulári bude potrebné odosielať položky dátum narodenia a vek. Skontrolujte, či zadanému dátumu narodenia zodpovedá zadaný vek. V prípade, že tieto dva údaje nie sú navzájom prepojené, zabezpečte, aby formulár nebolo možné odoslať.
 
-- [ ] pri realizácii zaškrtávacieho poľa (cez checkbox) dajte užívateľovi aj možnosť, aby si svoju odpoveď dodefinoval sám. Vo formulári sa napríklad môže nachádzať otázka (dúfam, že vymyslíte niečo iné) "akú farbu máte najradšej" s odpoveďami "biela", "modrá", "červená". Do odpovedí je potrebné pridať aj možnosť typu "iná, uveďte aká". Po zakliknutí tejto alternatívy sa užívateľovi zobrazí dovtedy nezobrazené textové pole, do ktorého vloží svoju odpoveď.
+- [x] pri realizácii zaškrtávacieho poľa (cez checkbox) dajte užívateľovi aj možnosť, aby si svoju odpoveď dodefinoval sám. Vo formulári sa napríklad môže nachádzať otázka (dúfam, že vymyslíte niečo iné) "akú farbu máte najradšej" s odpoveďami "biela", "modrá", "červená". Do odpovedí je potrebné pridať aj možnosť typu "iná, uveďte aká". Po zakliknutí tejto alternatívy sa užívateľovi zobrazí dovtedy nezobrazené textové pole, do ktorého vloží svoju odpoveď.
 
 
-- [ ] vo formulári budú minimálne 3 navzájom prepojené rozbaľovacie zoznamy, t.j. obsah druhého rozbaľovacieho zoznamu bude závisieť od výberu položky v prvom rozbaľovacom zozname a obsah tretieho rozbaľovacieho zoznamu bude závisieť od výberu položky v druhom rozbaľovacom zozname.
+- [x] vo formulári budú minimálne 3 navzájom prepojené rozbaľovacie zoznamy, t.j. obsah druhého rozbaľovacieho zoznamu bude závisieť od výberu položky v prvom rozbaľovacom zozname a obsah tretieho rozbaľovacieho zoznamu bude závisieť od výberu položky v druhom rozbaľovacom zozname.
 
 
 - [ ] časť formuláru sa prispôsobí podľa toho, akú položku si užívateľ zvolí v prepínači (realizovanom cez radio button), t.j. buď sa mu zmení odokryje alebo zakryje časť formulára alebo sa minimálne jedna položka zmení (napr. muža sa spýtate koľko váži a ženy, či je spokojná so svojou váhou - znova, dúfam, že vymyslíte niečo iné).
