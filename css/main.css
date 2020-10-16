@@ -21,3 +21,39 @@
 #show-hide{
     display: none;
 }
+
+#show-hide-list-platform{
+    display: block;
+}
+
+#show-hide-list-chipset-intel{
+    display: none;
+}
+
+#show-hide-list-chipset-amd{
+    display: none;
+}
+
+#show-hide-list-cpu2066{
+    display: none;
+}
+
+#show-hide-list-cpu1200{
+    display: none;
+}
+
+#show-hide-list-cpu1151{
+    display: none;
+}
+
+#show-hide-list-cpuTR4{
+    display: none;
+}
+
+#show-hide-list-cpuTRX4{
+    display: none;
+}
+
+#show-hide-list-cpuAM4{
+    display: none;
+}
