@@ -20,25 +20,25 @@ Vytvorte váš vlastný zmysluplný formulár. Zameranie formuláru si môžete 
 - [x] vo formulári budú minimálne 3 navzájom prepojené rozbaľovacie zoznamy, t.j. obsah druhého rozbaľovacieho zoznamu bude závisieť od výberu položky v prvom rozbaľovacom zozname a obsah tretieho rozbaľovacieho zoznamu bude závisieť od výberu položky v druhom rozbaľovacom zozname.
 
 
-- [ ] časť formuláru sa prispôsobí podľa toho, akú položku si užívateľ zvolí v prepínači (realizovanom cez radio button), t.j. buď sa mu zmení odokryje alebo zakryje časť formulára alebo sa minimálne jedna položka zmení (napr. muža sa spýtate koľko váži a ženy, či je spokojná so svojou váhou - znova, dúfam, že vymyslíte niečo iné).
+- [x] časť formuláru sa prispôsobí podľa toho, akú položku si užívateľ zvolí v prepínači (realizovanom cez radio button), t.j. buď sa mu zmení odokryje alebo zakryje časť formulára alebo sa minimálne jedna položka zmení (napr. muža sa spýtate koľko váži a ženy, či je spokojná so svojou váhou - znova, dúfam, že vymyslíte niečo iné).
 
 
-- [ ] v jednom jednoriadkovom textovom poli musí byť mailová adresa, ktorá bude obsahovať zavináč, minimálne 2 domény, pričom vrcholová doména bude mať 2-4 znaky. Pred zavináčom musia byť minimálne 3 znaky.
+- [x] v jednom jednoriadkovom textovom poli musí byť mailová adresa, ktorá bude obsahovať zavináč, minimálne 2 domény, pričom vrcholová doména bude mať 2-4 znaky. Pred zavináčom musia byť minimálne 3 znaky.
 
 
-- [ ] formulár bude obsahovať minimálne jedno viacriadkové textové pole (textarea) a skryté textové pole, do ktorého vložíte svoje meno.
+- [x] formulár bude obsahovať minimálne jedno viacriadkové textové pole (textarea) a skryté textové pole, do ktorého vložíte svoje meno.
 
 
-- [ ] minimálne štyri povinné položky formulára musia byť vyznačené.
+- [x] minimálne štyri povinné položky formulára musia byť vyznačené.
 
 
 - [ ] pri jednotlivých položkách formulára poskytnite užívateľovi nápovedu, ako má danú položku vyplniť. Pri zlom vyplnení položky je treba dať užívateľovi hneď po jej opustení vedieť (t.j. nie až pri odosielaní formulára), v čom presne spočíva chyba, pre ktorú sa formulár nedá odoslať (aj v prípade previazanosti položiek).
 
 
-- [ ] Pri vytváraní formuláru využite css knižnicu Bootstrap a jej preddefinované triedy. Základnú Bootstrap grafiku stránky vrátane formulára rozšírte a doštýlujte o vlastné css triedy tak, aby bol dizajn Vášho webu jedinečný.  
+- [x] Pri vytváraní formuláru využite css knižnicu Bootstrap a jej preddefinované triedy. Základnú Bootstrap grafiku stránky vrátane formulára rozšírte a doštýlujte o vlastné css triedy tak, aby bol dizajn Vášho webu jedinečný.  
 
 
-- [ ] Stránka bude responzívna t.j. prispôsobená rôznym veľkostiam obrazovky (desktop, tablet, mobil). Pri veľkosti obrazovky medium (od 768px) a väčšej, bude mať stránka najmenej dva stĺpce (použite Bootstrap triedu col-... napr. Obr.1). Pre menšie zobrazenia budú stĺpce umiestnené pod sebou. (Nápoveda: Bootstrap Grid). Dbajte na to, aby sa stránka zobrazila korektne pri akejkoľvek veľkosti okna prehliadača.
+- [x] Stránka bude responzívna t.j. prispôsobená rôznym veľkostiam obrazovky (desktop, tablet, mobil). Pri veľkosti obrazovky medium (od 768px) a väčšej, bude mať stránka najmenej dva stĺpce (použite Bootstrap triedu col-... napr. Obr.1). Pre menšie zobrazenia budú stĺpce umiestnené pod sebou. (Nápoveda: Bootstrap Grid). Dbajte na to, aby sa stránka zobrazila korektne pri akejkoľvek veľkosti okna prehliadača.
 
 Obr. 1. Bootstrap col-4
 
