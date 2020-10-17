@@ -1,22 +1,16 @@
 function emailValid() {
+
+    let regex = /[a-zA-Z0-9]{3,}[@][a-z]{1,}([.][a-z]{2,4}){1,}$/;
+
     var email = document.getElementById("email").value;
-    var string = Array.from(email)
-    var count = 0;
-    for (let i = 0; i < string.length; i++) {
-        console.log(email[i]);
-        if (email[i] == '@') {
-            break;
-        }
-        else {
-            count++;
-        }
+    var check = document.getElementById("email")
+    let val = regex.test(email);
+    if (val == false) {
+        check.classList.add("is-invalid")
     }
-
-    if (count < 3) {
-        alert("zla emailova adresa");
+    else {
+        check.classList.remove("is-invalid")
     }
-
-    alert(string.length);
 }
 
 function myFunction() {
@@ -161,19 +155,49 @@ var typeAge = document.getElementById('age');
 typeAge.onchange = function ageCalulate() {
     let date = new Date(document.getElementById('date-of-birth').value);
     let age = document.getElementById('age').value;
+    let check = document.getElementById('age');
 
     let today = new Date().getFullYear();
 
+    if (check == null || check == "") {
+        check.classList.add("is-invalid");
+        check.required = true;
+    }
+
     if (today - age != date.getFullYear()) {
-        alert("Nesprávný počet rokov");
+        check.classList.add("is-invalid");
+        check.required = true;
+    }
+    else {
+        check.classList.remove("is-invalid");
+        check.required = false;
     }
 
     console.log(date.getFullYear());
     console.log(today);
     console.log(age);
-    alert(date);
-    alert(age);
 }
+
+
+
+var yesItem = document.getElementById('yes');
+var noItem = document.getElementById('no');
+
+yesItem.onchange = function () {
+    document.getElementById("show-form").style.display = 'block';
+};
+noItem.onchange = function () {
+    document.getElementById("show-form").style.display = 'none';
+};
+
+function phoneNumberValid() {
+    let reg = /[+][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/
+    let number = document.getElementById('phoneNumber').value;
+    let val = reg.test(number);
+    alert("Zlé telefónne číslo");
+}
+
+
 
 // var selectedOption = document.getElementById('Platform');
 // var htmlCollection = document.getElementsByTagName('select');
@@ -186,3 +210,43 @@ typeAge.onchange = function ageCalulate() {
 //     document.getElementById(this.value).style.display = 'inline';
 // };
 
+
+function formCheck() {
+    let name = document.getElementById('firstName').value;
+    let surname = document.getElementById('secondName').value;
+    let email = document.getElementById('email').value;
+    let age = document.getElementById('age').value;
+
+    if (name == null || name == "", surname == null || surname == "", email == null || email == "", age == null || age == "") {
+        alert("Tento formulár sa odoslať")
+    }
+
+    console.log(name.value.lenght);
+}
+
+
+function checkEmpty(id) {
+    let elem = document.getElementById(id).value;
+    let check = document.getElementById(id);
+
+    if (elem == null || elem == "") {
+        check.classList.add("is-invalid")
+        check.required = true;
+    }
+    else {
+        check.classList.remove("is-invalid");
+        check.required = false;
+    }
+}
+
+function check(id){
+    let elem = document.getElementById(id).value;
+    let check = document.getElementById(id);
+
+    if (elem == null || elem == "") {
+        check.classList.add("is-invalid")
+    }
+    else {
+        check.classList.remove("is-invalid");
+    }
+}
