@@ -18,6 +18,25 @@
   padding: 20px;
 }
 
+.body-dsg{
+    margin: 20px;
+    background-color: rgb(226, 226, 226);
+}
+
+.hide-area{
+    display: none;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+.div-confirm{
+    padding: 22% 0;
+    text-align: center;
+}
+
 #show-hide{
     display: none;
 }
