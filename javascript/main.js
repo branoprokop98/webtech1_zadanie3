@@ -15,23 +15,6 @@ function emailValid() {
     }
 }
 
-function myFunction() {
-    alert("hey");
-}
-
-// var other = document.getElementById('Ine');
-// var nvidia = document.getElementById('Nvidia');
-// var intel = document.getElementById('Intel');
-// var amd = document.getElementById('AMD');
-
-// other.onchange = function () {
-//     document.getElementById("show-hide").style.display = 'block';
-// }
-
-// other.onchange = function () {
-//     document.getElementById("show-hide").style.display = 'none';
-// }
-
 function showHideElem() {
     var checkBox = document.getElementById("Ine");
     var text = document.getElementById("show-hide");
@@ -159,27 +142,6 @@ amd.onclick = function showAMDCpu() {
     }
 }
 
-// if (document.getElementById('Ine').checked == true) {
-//     document.getElementById("show-hide").style.display = 'block';
-// }
-// if (document.getElementById('Ine').checked == false) {
-//     document.getElementById("show-hide").style.display = 'none';
-// }
-
-
-
-// nvidia.onchange = function () {
-//     document.getElementById("show-hide").style.display = 'none';
-// }
-
-// intel.onchange = function () {
-//     document.getElementById("show-hide").style.display = 'none';
-// }
-
-// amd.onchange = function () {
-//     document.getElementById("show-hide").style.display = 'none';
-// }
-
 
 var typeAge = document.getElementById('age');
 
@@ -187,8 +149,17 @@ function ageCalculate() {
     let date = new Date(document.getElementById('date-of-birth').value);
     let age = document.getElementById('age').value;
     let check = document.getElementById('age');
+    console.log(date.getDay());
 
-    let today = new Date().getFullYear();
+    let today = new Date();
+
+    console.log(today);
+
+    if(today.getMonth() < date.getMonth()){
+        check.classList.add("is-invalid");
+        check.required = true;
+        return false;
+    }
 
     if (check == null || check == "") {
         check.classList.add("is-invalid");
@@ -196,7 +167,7 @@ function ageCalculate() {
         return false;
     }
 
-    if (today - age != date.getFullYear()) {
+    if (today.getFullYear() - age != date.getFullYear()) {
         check.classList.add("is-invalid");
         check.required = true;
         return false;
@@ -237,19 +208,6 @@ function phoneNumberValid() {
 }
 
 
-
-// var selectedOption = document.getElementById('Platform');
-// var htmlCollection = document.getElementsByTagName('select');
-// var arr = Array.from(htmlCollection);     //od ECMAScript 2015 (ed 6)       
-// arr.shift();
-
-
-// selectedOption.onchange = function () {
-//     arr.forEach(function (element) { element.style.display = 'none'; });
-//     document.getElementById(this.value).style.display = 'inline';
-// };
-
-
 function formCheck() {
     let name = document.getElementById('firstName').value;
     let surname = document.getElementById('secondName').value;
@@ -262,7 +220,7 @@ function formCheck() {
     }
 
     if(yesform == true){
-        if(!phoneNumberValid()){
+        if(!phoneNumberValid() || !checkAddress() || !checkPSC()){
             return false;
         }
     }
@@ -291,17 +249,5 @@ function checkEmpty(id) {
     else {
         check.classList.remove("is-invalid");
         check.required = false;
-    }
-}
-
-function check(id){
-    let elem = document.getElementById(id).value;
-    let check = document.getElementById(id);
-
-    if (elem == null || elem == "") {
-        check.classList.add("is-invalid")
-    }
-    else {
-        check.classList.remove("is-invalid");
     }
 }
